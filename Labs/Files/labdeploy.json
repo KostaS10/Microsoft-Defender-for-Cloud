@@ -74,7 +74,7 @@
         "sqlServerName": "[toLower(concat('asclab-sql-',uniqueString(subscription().subscriptionId)))]",
         "sqlDatabaseName": "asclab-db",
         "aksClusterName": "asclab-aks",
-        "aksVersion": "1.21.9",
+        "aksVersion": "1.26.0",
         "aksDNSPrefix": "asclab-aks",
         "aksNetworkPlugin": "kubenet"
     },
@@ -464,7 +464,7 @@
             "location": "[resourceGroup().location]",
             "apiVersion": "2015-08-01",
             "sku": {
-                "name": "F1"
+                "name": "S1"
             },
             "dependsOn": [],
             "tags": "[parameters('resourceTags')]",
